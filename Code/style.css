@@ -103,6 +103,8 @@ body {
   border-radius: 10px;
 }
 
+
+
 .library {
   height: 70px;
   display: flex;
@@ -139,8 +141,26 @@ body {
 
 .nav-playlist {
   height: 300px;
+  overflow: hidden;
+  scrollbar-width: thin;
+}
+
+.nav-playlist:hover{
   overflow-y: scroll;
 }
+
+.nav-playlist::-webkit-scrollbar {
+  background-color: gray;
+  width: 12px; 
+  height: 50%;
+}
+
+.nav-playlist::-webkit-scrollbar:hover {
+  background-color: #999;
+  transition: .5s;
+}
+
+
 
 .create-playlist {
   height: 140px;
@@ -180,9 +200,6 @@ body {
   gap: 10px;
 }
 
-.nav-playlist::-webkit-scrollbar {
-  background-color: gray;
-}
 
 .nav-language {
   cursor: pointer;
