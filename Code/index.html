@@ -1,140 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify - Web Player: Music for everyone</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="/Code/assets/title logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-<section class="container-w">
-
-
-    <section class="section">
-
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="/Code/assets/title logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="container-w">
+      <section class="section">
         <aside>
-            <nav>
-                <div class="navbar">
-                    <div class="nav-logo-text">
-                    <img src="/Code/assets/nav-logo.png" alt="Spotify-logo" class="nav-logo-white">
-                    <h3>Spotify</h3>
-                    </div> 
-    
-                    <div class="nav-menu">
-                        <ul>
-                            <li><i class="fa-solid fa-house"></i>Home</li>
-                            <li><i class="fa-solid fa-magnifying-glass"></i>Search</li>
-                        </ul>
-                    </div>
-                </div>
-    
-                <div class="nav-library">
-                    <div class="library">
-                        <i class="fa-solid fa-bookmark" class="bookmark"></i>
-                        <h3>Your Library</h3>
-                        <i class="fa-solid fa-plus plus-icon"></i>
-                    </div>
-                    <div class="nav-playlist">
-                        <div class="create-playlist">
-                            <h4>Create your first playlist</h4>
-                            <h5>It's easy, we'll help you</h5>
-                            <button class="btn">Create playlist</button>
-                        </div>
-                        <div class="browse-podcast">
-                            <h4>Let's find some podcasts to follow</h4>
-                            <h5>We'll keep you updated on new episodes</h5>
-                            <button class="btn">Browse podcasts</button>
-                        </div>
-                    </div>
-                    <div class="nav-language">
-                        <h5>Cookies</h5>
-                        <button class="lang-btn"><i class="fa-solid fa-globe"></i>English</button>
-                    </div>
-                </div>
-            </nav>
-        </aside>
-    </section>
+          <nav>
+            <div class="navbar">
+              <div class="nav-logo-text">
+                <img
+                  src="/Code/assets/nav-logo.png"
+                  alt="Spotify-logo"
+                  class="nav-logo-white"
+                />
+                <h3>Spotify</h3>
+              </div>
 
-    <main>
-     <header>
-        <div class="header-arrow">
+              <div class="nav-menu">
+                <ul>
+                  <li><i class="fa-solid fa-house"></i>Home</li>
+                  <li><i class="fa-solid fa-magnifying-glass"></i>Search</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="nav-library">
+              <div class="library">
+                <i class="fa-solid fa-bookmark" class="bookmark"></i>
+                <h3>Your Library</h3>
+                <i class="fa-solid fa-plus plus-icon"></i>
+              </div>
+              <div class="nav-playlist">
+                <div class="create-playlist">
+                  <h4>Create your first playlist</h4>
+                  <h5>It's easy, we'll help you</h5>
+                  <button class="btn">Create playlist</button>
+                </div>
+                <div class="browse-podcast">
+                  <h4>Let's find some podcasts to follow</h4>
+                  <h5>We'll keep you updated on new episodes</h5>
+                  <button class="btn">Browse podcasts</button>
+                </div>
+              </div>
+              <div class="nav-language">
+                <h5>Cookies</h5>
+                <button class="lang-btn">
+                  <i class="fa-solid fa-globe"></i>English
+                </button>
+              </div>
+            </div>
+          </nav>
+        </aside>
+      </section>
+
+      <main>
+        <header>
+          <div class="header-arrow">
             <span><i class="fa-solid fa-angle-left"></i></span>
             <span><i class="fa-solid fa-angle-right"></i></span>
-        </div>
-        <div class="header-btns">
+          </div>
+          <div class="header-btns">
             <button class="header-sign-up">Sign up</button>
             <button class="header-log-in">Log in</button>
-        </div>
-     </header>
-     <div>
+          </div>
+        </header>
+        <div>
           <div class="songs-playlist">
             <div class="heading">
-                <h3>Spotify Playlists</h3>
-                <h5>Show all</h5>
+              <h3>Spotify Playlists</h3>
+              <h5>Show all</h5>
             </div>
             <div class="song-cards">
-                <div class="song-card">
-                    <div class="card-img">
-                        <img src="/Code/assets/cover1.png" alt="song-cover">
-                        <!-- <img src="/Code/assets/spotify play.png" alt="play-button" class="play-btn"> -->
-                    </div>
-                    <h4>Today's Top Hits</h4>
-                    <h5>Abdul Shahzad is on top of the Hottest 50!</h5>
+              <div class="song-card">
+                <div class="card-img">
+                  <img src="/Code/assets/cover1.png" alt="song-cover" />
+                  <div class="overlay">
+                    <img
+                      src="/Code/assets/spotify play.png"
+                      alt="play-button"
+                      class="play-btn"
+                    />
+                  </div>
                 </div>
+                <h4>Today's Top Hits</h4>
+                <h5>Abdul Shahzad is on top of the Hottest 50!</h5>
+              </div>
 
-                <div class="song-card">
-                    <div class="card-img">
-                        <img src="/Code/assets/cover2.png" alt="">
-                    </div>
-                    <h4>WAVES - (in motion) season One</h4>
-                    <h5>Rhox _</h5>
+              <div class="song-card">
+                <div class="card-img">
+                  <img src="/Code/assets/cover2.png" alt="song-cover" />
+                  <div class="overlay">
+                    <img
+                      src="/Code/assets/spotify play.png"
+                      alt="play-button"
+                      class="play-btn"
+                    />
+                  </div>
                 </div>
+                <h4>WAVES - (in motion) season One</h4>
+                <h5>Rhox _</h5>
+              </div>
 
-                <div class="song-card">
-                    <div class="card-img">
-                        <img src="/Code/assets/cover3.png" alt="">
-                    </div>
-                    <h4>WAVES - (in motion) season three</h4>
-                    <h5>Best and recent chills</h5>
+              <div class="song-card">
+                <div class="card-img">
+                  <img src="/Code/assets/cover3.png" alt="song-cover" />
+                  <div class="overlay">
+                    <img
+                      src="/Code/assets/spotify play.png"
+                      alt="play-button"
+                      class="play-btn"
+                    />
+                  </div>
                 </div>
+                <h4>WAVES - (in motion) season three</h4>
+                <h5>Best and recent chills</h5>
+              </div>
 
-                <div class="song-card">
-                    <div class="card-img">
-                        <img src="/Code/assets/cover4.png" alt="">
-                    </div>
-                    <h4>Boomplay Playlist</h4>
-                    <h5>Michael Drah</h5>
+              <div class="song-card">
+                <div class="card-img">
+                  <img src="/Code/assets/cover4.png" alt="song-cover" />
+                  <div class="overlay">
+                    <img
+                      src="/Code/assets/spotify play.png"
+                      alt="play-button"
+                      class="play-btn"
+                    />
+                  </div>
                 </div>
+                <h4>Boomplay Playlist</h4>
+                <h5>Michael Drah</h5>
+              </div>
 
-                <div class="song-card">
-                    <div class="card-img">
-                        <img src="/Code/assets/cover5.png" alt="">
-                    </div>
-                    <h4>All out 2023</h4>
-                    <h5>Maria Eduarda Iranaga</h5>
+              <div class="song-card">
+                <div class="card-img">
+                  <img src="/Code/assets/cover5.png" alt="song-cover" />
+                  <div class="overlay">
+                    <img
+                      src="/Code/assets/spotify play.png"
+                      alt="play-button"
+                      class="play-btn"
+                    />
+                  </div>
                 </div>
-
-                
+                <h4>All out 2023</h4>
+                <h5>Maria Eduarda Iranaga</h5>
+              </div>
             </div>
-            
           </div>
-     </div>
-    </main> 
-
-    
-</section>
-<footer>
-  <div class="footer-container">
-    <div class="preview-text">
-        <h4>PREVIEW OF SPOTIFY</h4>
-        <h5>Sign up to get unlimited songs and podcasts with occassional ads. No credit card needed.</h5>
-    </div>
-    <div class="sign-up-btn">
-        <button class="sign-up">Sign up for free</button>
-    </div>
-  </div>
-</footer>
-</body>
+        </div>
+      </main>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="preview-text">
+          <h4>PREVIEW OF SPOTIFY</h4>
+          <h5>
+            Sign up to get unlimited songs and podcasts with occassional ads. No
+            credit card needed.
+          </h5>
+        </div>
+        <div class="sign-up-btn">
+          <button class="sign-up">Sign up for free</button>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
