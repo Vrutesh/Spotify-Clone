@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&family=Alkatra&family=Chakra+Petch:wght@700&family=Cinzel:wght@600&family=DynaPuff:wght@500&family=EB+Garamond:wght@500&family=Fira+Sans:ital,wght@0,200;0,300;1,200&family=Genos:wght@800&family=Hind+Siliguri&family=Jost:wght@200&family=Lumanosimo&family=Noto+Sans+KR:wght@800&family=Noto+Serif:wght@700&family=Nunito&family=Nunito+Sans:opsz,wght@6..12,600&family=Open+Sans:wght@300;400;600&family=Philosopher:wght@700&family=Playfair+Display:wght@500&family=Plus+Jakarta+Sans:wght@500&family=Poppins:wght@700&family=Roboto+Slab:wght@300&family=Roboto:wght@100;300&family=Shantell+Sans:ital,wght@1,300&family=Stick+No+Bills:wght@700&family=Tektur:wght@600&family=Ubuntu:wght@700&family=Victor+Mono&display=swap');
+
+:root{
+  --font-family:"Noto Sans KR"
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,34 +19,38 @@ body {
 }
 
 .section {
-  width: 21%;
+  width: 24%;
   height: 80%;
 }
 
 /* sidebar section */
 
 .navbar {
-  margin: 7px 10px 7px 10px;
-  width: 300px;
+  margin: 7px 0 7px 7px;
+  width: 345px;
   height: 150px;
   background-color: #121212;
   display: flex;
   flex-direction: column;
   padding-left: 25px;
   color: white;
-  border-radius: 20px;
+  border-radius: 10px;
+  font-family: var(--font-family);
 }
 
 .nav-logo-text {
   height: 50px;
   display: flex;
   align-items: end;
+  font-size: 14px;
+  cursor: pointer;
 }
 
 .nav-logo-white {
-  height: 30px;
+  height: 25px;
   padding-right: 8px;
 }
+
 
 .nav-menu {
   height: 100px;
@@ -56,8 +66,17 @@ body {
 }
 
 .nav-menu ul li {
+  font-family: var(--font-family);
+  font-size: 14px;
   display: flex;
   align-items: center;
+  color: #B3B3B3;
+  cursor: pointer;
+}
+
+.nav-menu ul li:hover{
+  color: white;
+  transition: .5s;
 }
 
 .nav-menu i {
@@ -70,14 +89,16 @@ body {
 }
 
 .nav-library {
-  margin: 10px 10px 10px 10px;
-  width: 300px;
+  font-family: var(--font-family);
+  font-size: 14px;
+  margin: 7px 0 7px 7px;
+  width: 345px;
   height: 480px;
   background-color: #121212;
   display: flex;
   flex-direction: column;
   color: white;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .library {
@@ -85,21 +106,29 @@ body {
   display: flex;
   align-items: center;
   padding-left: 25px;
+  color: #B3B3B3;
+  cursor: pointer;
+}
+
+.library:hover{
+  color: white;
+  transition: .5s;
 }
 
 .library h3 {
-  padding: 0 100px 0 20px;
+  padding: 0 150px 0 20px;
 }
 
 .nav-playlist {
-  height: 230px;
+  height: 300px;
   overflow-y: scroll;
+  
 }
 
 .create-playlist {
-  height: 120px;
+  height: 140px;
   margin: 10px 10px 10px 10px;
-  padding-left: 10px;
+  padding-left: 20px;
   border-radius: 15px;
   background-color: #242424;
   display: flex;
@@ -109,15 +138,18 @@ body {
 }
 
 .btn {
+  cursor: pointer;
   width: 130px;
   height: 35px;
   border-radius: 20px;
+  font-family: var(--font-family);
 }
 
+
 .browse-podcast {
-  height: 120px;
+  height: 160px;
   margin: 20px 10px 10px 10px;
-  padding-left: 10px;
+  padding-left: 20px;
   border-radius: 15px;
   background-color: #242424;
   display: flex;
@@ -131,6 +163,8 @@ body {
 }
 
 .nav-language {
+  cursor: pointer;
+  font-family: var(--font-family);
   height: 200px;
   display: flex;
   flex-direction: column;
@@ -138,13 +172,25 @@ body {
   padding: 40px 0 0 25px;
 }
 
+.nav-language > h5{
+  color: #999;
+}
+
+.nav-language > h5:hover{
+  text-decoration: underline #999;
+}
 .lang-btn {
-  width: 130px;
+  width: 100px;
   height: 35px;
   border-radius: 20px;
-  border: 2px solid white;
+  border: 1px solid #999;
   background: transparent;
   color: white;
+}
+
+.lang-btn:hover{
+  transform: scale(1.05);
+  border: 2px solid white;
 }
 
 .lang-btn i {
@@ -154,16 +200,17 @@ body {
 /* main section */
 
 main {
-  width: 79%;
+  width: 77%;
   height: 80%;
+  font-family: var(--font-family);
 }
 
 header {
-  margin: 7px 10px 0 0;
+  margin: 7px 7px 0 0;
   height: 70px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-  background-color: #121212;
+  background-color: #090909;
   display: flex;
   align-items: center;
 }
@@ -186,6 +233,10 @@ header {
   color: #999;
 }
 
+.header-arrow i{
+  font-size: 20px;
+}
+
 .header-btns {
   width: 30%;
   display: flex;
@@ -195,14 +246,21 @@ header {
 }
 
 .header-sign-up {
+  font-family: var(--font-family);
   width: 110px;
   height: 50px;
   background-color: transparent;
   border: none;
+  color: #9E9E9E;
+}
+
+.header-sign-up:hover{
   color: white;
+  font-size: 14px;
 }
 
 .header-log-in {
+  font-family: var(--font-family);
   width: 110px;
   height: 50px;
   border-radius: 50px;
@@ -210,11 +268,95 @@ header {
   background-color: white;
 }
 
+.header-log-in:hover{
+  transition: .3s;
+  font-size: 15px;
+}
+
+.songs-playlist{
+  background-color: #121212;
+  height: 565px;
+  margin: 0 7px 7px 0;
+  color: white;
+}
+
+.songs-playlist .heading{
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding: 20px 30px 50px 35px;
+}
+
+.heading h3{
+  width: 90%;
+  font-size: 22px;
+}
+
+.heading h3:hover{
+  text-decoration: underline white;
+}
+
+.heading h5{
+  width: 10%;
+  display: flex;
+  justify-content: end;
+  color: #9E9E9E;
+}
+
+.heading h5:hover{
+  text-decoration: underline #9E9E9E;
+}
+
+.song-cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.song-card{
+  width: 210px;
+  height: 290px;
+  border-radius: 20px;
+  background-color: #161616;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  cursor: pointer;
+}
+
+.song-card:hover{
+  transition: .6s;
+  background-color: #383838;
+}
+
+.song-card > h4{
+  padding: 0 10px;
+}
+
+.song-card > h5{
+  color: #A6A6A6;
+  padding: 0 10px;
+}
+
+.card-img{
+  width: 210px;
+  height: 200px;
+  padding: 10px 10px;
+}
+
+.card-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+
+}
+
 /* footer section */
 
 .footer-container {
   height: 60px;
-  margin: 0 10px 10px 10px;
+  margin: 0 7px 7px 7px;
   padding-left: 15px;
   background: linear-gradient(45deg, rgb(217, 63, 251), rgb(27, 166, 255));
   display: flex;
@@ -227,6 +369,16 @@ header {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  font-family: 'Nunito';
+
+}
+
+.preview-text >h4{
+  font-size: 13px;
+}
+
+.preview-text > h5{
+  font-family: var(--font-family);
 }
 
 .sign-up-btn {
@@ -236,8 +388,16 @@ header {
 }
 
 .sign-up {
-  width: 140px;
-  height: 40px;
+  font-family: var(--font-family);
+  width: 160px;
+  height: 45px;
   border-radius: 20px;
   border: solid white;
+  font-size: 13px;
+}
+
+.sign-up:hover{
+  transform: scale(1.03);
+ font-size: 14px;
+ transition: .4s;
 }
