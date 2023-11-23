@@ -150,12 +150,17 @@ body {
 }
 
 .nav-playlist::-webkit-scrollbar {
-  background-color: gray;
+  background-color: transparent;
   width: 12px; 
   height: 50%;
 }
 
-.nav-playlist::-webkit-scrollbar:hover {
+.nav-playlist::-webkit-scrollbar-thumb{
+  height: 40px;
+  background-color: #383838;
+}
+
+.nav-playlist::-webkit-scrollbar-thumb:hover {
   background-color: #999;
   transition: .5s;
 }
