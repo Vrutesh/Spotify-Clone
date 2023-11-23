@@ -1,2 +1,2 @@
-# Spotify Landing Page
-Designed and built Spotify Landing Page using HTML, CSS.
+# Spotify Clone
+Designed and built Spotify Clone using HTML, CSS.
