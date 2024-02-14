@@ -318,8 +318,16 @@ header {
   font-size: 15px;
 }
 
+.song-library {
+  display: flex;
+  justify-content: center;
+}
+
 .song-library ul {
   padding: 0 12px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .song-library ul li {
@@ -330,12 +338,17 @@ header {
   align-items: center;
   gap: 12px;
   cursor: pointer;
-  border: 1px solid #fff;
-  margin: 12px 0;
+  /* border: 1px solid #6a6a6a; */
+  box-shadow: rgba(91, 91, 91, 0.2) 0px 7px 29px 0px;
+  margin: 40px 0;
   padding: 10px 10px;
   border-radius: 5px;
+  transition: 0.5s;
 }
 
+.song-library ul li:hover {
+  transform: scale(1.03);
+}
 .song-library img {
   width: 24px;
   height: 24px;
@@ -374,15 +387,18 @@ header {
   bottom: 0;
   background-color: rgb(29, 29, 29);
   width: 100%;
-  padding: 12px;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
+  padding: 10px;
 }
 
-.songtrack{
+.songtrack {
   display: flex;
   justify-content: space-between;
+}
+
+.songbuttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
 .songbuttons img {
@@ -392,20 +408,43 @@ header {
   cursor: pointer;
 }
 
+.songinfo {
+  font-size: 13px;
+}
 
-.seekbar{
+.duration-container{
+  display: flex;
+  gap: 7px;
+
+}
+
+.songtime {
+  font-size: 13px;
+}
+
+.volume{
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.range input{
+  width: 60px;
+  height: 7px;
+}
+
+.seekbar {
   position: absolute;
   bottom: 0;
   height: 4px;
   width: 98%;
   border-radius: 10px;
-  border: 2px solid #999;
+  border: 2px solid springgreen;
   background-color: #fff;
   margin: 3px;
-
 }
 
-.circle{
+.circle {
   width: 13px;
   height: 13px;
   background-color: #fff;
@@ -414,8 +453,8 @@ header {
   bottom: 6px;
   left: 0;
   transition: left 0.5s;
+  cursor: pointer;
 }
-
 
 .songs-playlist .heading {
   height: 30px;
