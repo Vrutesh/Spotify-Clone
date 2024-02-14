@@ -38,7 +38,7 @@ async function main() {
     .querySelector(".song-library")
     .getElementsByTagName("ul")[0];
 
-    for (const song of songs) {
+  for (const song of songs) {
     songUL.innerHTML =
       songUL.innerHTML +
       `<li>
@@ -107,7 +107,6 @@ async function main() {
   //event listener on previous and next button
   let previousbtn = document.getElementById("previous");
   previousbtn.addEventListener("click", () => {
-
     let index = songs.indexOf(currentSong.src.split("/").slice(-1)[0]);
     if (index - 1 >= 0) {
       playMusic(songs[index - 1]);
@@ -115,7 +114,6 @@ async function main() {
   });
   let nextbtn = document.getElementById("next");
   nextbtn.addEventListener("click", () => {
-
     let index = songs.indexOf(currentSong.src.split("/").slice(-1)[0]);
     if (index + 1 < songs.length) {
       playMusic(songs[index + 1]);

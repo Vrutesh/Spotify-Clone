@@ -412,23 +412,22 @@ header {
   font-size: 13px;
 }
 
-.duration-container{
+.duration-container {
   display: flex;
   gap: 7px;
-
 }
 
 .songtime {
   font-size: 13px;
 }
 
-.volume{
+.volume {
   display: flex;
   align-items: center;
   gap: 7px;
 }
 
-.range input{
+.range input {
   width: 60px;
   height: 7px;
 }

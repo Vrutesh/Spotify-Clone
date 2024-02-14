@@ -2,77 +2,88 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log in - Spotify</title>
-    <link rel="shortcut icon" href="/Code/assets/title logo.png" type="png">
-    <link rel="stylesheet" href="login.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log in - Spotify</title>
+  <link rel="shortcut icon" href="/Code/assets/black-title-logo.png" type="png">
+  <link rel="stylesheet" href="login.css">
 </head>
 
 <body>
 
-    <section>
-        <nav>
-            <img src="/Code/assets/spotify-logo.svg" alt="">
-        </nav>
-    </section>
+  <section>
+    <nav>
+      <a href="index.html">
+        <img src="/Code/assets/spotify-logo.svg" alt="">
+      </a>
+    </nav>
+  </section>
 
 
-    <section class="login-section">
-        <div class="login-container">
-                <h1>Log in to Spotify</h1>
-                <div class="container">
-                    <button class="btn-google">
-                      <img src="assets/Google.png" alt="Google Icon" class="google-icon">
-                      Continue with Google
-                    </button>
-                  </div>
-                <div class="container">
-                    <button class="btn-google">
-                      <img src="assets/facebook.png" alt="Google Icon" class="google-icon">
-                      Continue with Facebook
-                    </button>
-                  </div>
-                <div class="container">
-                    <button class="btn-google">
-                      <img src="assets/apple.png" alt="Google Icon" class="google-icon">
-                      Continue with Apple
-                    </button>
-                  </div>
-                <div class="container">
-                    <button class="btn-google">
-                <img src="assets/apple.png" alt="Google Icon" class="google-icon" style="visibility: hidden;">
-                      Continue with phone number
-                    </button>
-                  </div>
-                  <hr class="line">
+  <section class="login-section">
+    <div class="login-container">
+      <h1>Log in to Spotify</h1>
+      <div class="container">
+        <button class="btn-google">
+          <img src="assets/Google.png" alt="Google Icon" class="google-icon">
+          Continue with Google
+        </button>
+      </div>
+      <div class="container">
+        <button class="btn-google">
+          <img src="assets/facebook.png" alt="Google Icon" class="google-icon">
+          Continue with Facebook
+        </button>
+      </div>
+      <div class="container">
+        <button class="btn-google">
+          <img src="assets/apple.png" alt="Google Icon" class="google-icon">
+          Continue with Apple
+        </button>
+      </div>
+      <div class="container">
+        <button class="btn-google">
+          <img src="assets/apple.png" alt="Google Icon" class="google-icon" style="visibility: hidden;">
+          Continue with phone number
+        </button>
+      </div>
+      <p class="line">
 
-                 
-                      <form action="" class="login-form">
-                        <label for="email">Email or username</label>
-                        <input type="email" name="email" id="email" placeholder="Email or username">
-    
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password" placeholder="Password">
 
-                        <label>Remember me</label>
-                        
-                        <div class="login-button">
-                            <button class="login-btn">Log In</button>
-                            <a href="/">Forgot your password ?</a>
-                        </div>
+      <form action="" class="login-form">
+        <label for="email">Email or username</label>
+        <input type="email" name="email" id="email" placeholder="Email or username">
 
-                    </form>
-                    <hr class="line">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Password">
 
-                    <h5>Don't have an account ? <a href="/">Sign up for Spotify</a></h5>
-                </div>
-      </section>
 
-      
-            <footer>
-                <p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
-            </footer>
+        <div class="remember-me">
+
+          <label class="switch">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider"></span>
+          </label>
+          <label>Remember me</label>
+        </div>
+
+
+        <div class="login-button">
+          <button class="login-btn">Log In</button>
+          <a href="signup.html">Forgot your password ?</a>
+        </div>
+
+      </form>
+      <p class="line">
+
+      <h5>Don't have an account ? <a href="/">Sign up for Spotify</a></h5>
+    </div>
+  </section>
+
+
+  <footer>
+    <p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
+  </footer>
 </body>
 
 </html>
