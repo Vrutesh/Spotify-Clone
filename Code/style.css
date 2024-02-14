@@ -103,7 +103,6 @@ body {
   border-radius: 10px;
 }
 
-
 .library {
   height: 70px;
   display: flex;
@@ -144,32 +143,30 @@ body {
   scrollbar-width: thin;
 }
 
-.nav-playlist:hover{
+.nav-playlist:hover {
   overflow-y: scroll;
 }
 
 .nav-playlist::-webkit-scrollbar {
   background-color: transparent;
-  width: 12px; 
+  width: 12px;
   height: 50%;
 }
 
-.nav-playlist::-webkit-scrollbar-thumb{
+.nav-playlist::-webkit-scrollbar-thumb {
   height: 40px;
   background-color: #333;
   border-radius: 6px;
 }
 
-.nav-playlist::-webkit-scrollbar-track{
+.nav-playlist::-webkit-scrollbar-track {
   background-color: #222;
 }
 
 .nav-playlist::-webkit-scrollbar-thumb:hover {
   background-color: #222;
-  transition: .5s;
+  transition: 0.5s;
 }
-
-
 
 .create-playlist {
   height: 140px;
@@ -208,7 +205,6 @@ body {
   justify-content: center;
   gap: 10px;
 }
-
 
 .nav-language {
   cursor: pointer;
@@ -274,11 +270,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.8);
   color: #999;
+  cursor: not-allowed;
 }
 
 .header-arrow i {
@@ -321,13 +318,11 @@ header {
   font-size: 15px;
 }
 
-
-
 .song-library ul {
   padding: 0 12px;
 }
 
-.song-library ul li{
+.song-library ul li {
   width: max-content;
   list-style-type: decimal;
   display: flex;
@@ -341,25 +336,24 @@ header {
   border-radius: 5px;
 }
 
-.song-library img{
+.song-library img {
   width: 24px;
   height: 24px;
 }
 
-.playnow{
+.playnow {
   padding: 0 0 0 20px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.playnow span{
+.playnow span {
   font-size: 10px;
   padding: 12px;
-  
 }
 
-.info{
+.info {
   font-size: 12px;
   display: flex;
   gap: 5px;
@@ -375,22 +369,53 @@ header {
   position: relative;
 }
 
-.playbar{
+.playbar {
   position: absolute;
   bottom: 0;
-  background-color: rgb(112, 254, 112);
+  background-color: rgb(29, 29, 29);
   width: 100%;
   padding: 12px;
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
 }
 
-.songbuttons img{
+.songtrack{
+  display: flex;
+  justify-content: space-between;
+}
+
+.songbuttons img {
   width: 28px;
   height: 28px;
   margin: 0 6px;
-  
+  cursor: pointer;
 }
+
+
+.seekbar{
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  width: 98%;
+  border-radius: 10px;
+  border: 2px solid #999;
+  background-color: #fff;
+  margin: 3px;
+
+}
+
+.circle{
+  width: 13px;
+  height: 13px;
+  background-color: #fff;
+  border-radius: 13px;
+  position: relative;
+  bottom: 6px;
+  left: 0;
+  transition: left 0.5s;
+}
+
 
 .songs-playlist .heading {
   height: 30px;

@@ -1,0 +1,45 @@
+:root {
+  --font-family: "Noto Sans KR";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+body {
+  background-color: rgb(37,37,37);
+}
+
+nav{
+  background-color: #000;
+  padding: 32px 0px 32px 51px
+}
+
+nav img{
+  filter: invert(1);
+  height: 40px;
+}
+
+.login-section{
+  padding: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.login-container{
+  max-width: 734px;
+  width: 100%;
+  height: 80vh;
+  background-color: #000;
+  border-radius: 10px;
+  padding: 32px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.login-container h1{
+  font-family: var(--font-family);
+}
