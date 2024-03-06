@@ -2,7 +2,7 @@ let currentSong = new Audio();
 let songs;
 
 async function getSongs() {
-  let a = await fetch("/Code/songs/");
+  let a = await fetch("songs/");
   let response = await a.text();
 
   let div = document.createElement("div");
@@ -21,7 +21,7 @@ async function getSongs() {
 }
 
 const playMusic = (track, pause = false) => {
-  currentSong.src = "/Code/songs/" + track;
+  currentSong.src = "songs/" + track;
   if (!pause) {
     currentSong.play();
     play.src = "assets/pause.svg";
@@ -42,14 +42,14 @@ async function main() {
     songUL.innerHTML =
       songUL.innerHTML +
       `<li>
-        <img class="invert" src="/Code/assets/music.svg" alt="">
+        <img class="invert" src="assets/music.svg" alt="">
         <div class="info">
                     <div>${song}</div>
                     <div>Arjit Singh</div>
                   </div>
                   <div class="playnow">
                     <span>Play Now</span>
-                    <img class="invert" src="/Code/assets/play.svg" alt="">
+                    <img class="invert" src="assets/play.svg" alt="">
                   </div> </li>`;
   }
   Array.from(
