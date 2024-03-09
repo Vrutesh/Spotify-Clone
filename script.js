@@ -2,7 +2,7 @@ let currentSong = new Audio();
 let songs;
 
 async function getSongs() {
-  let a = await fetch("assets\songs");
+  let a = await fetch("/songs/");
   let response = await a.text();
 
   let div = document.createElement("div");
@@ -21,7 +21,7 @@ async function getSongs() {
 }
 
 const playMusic = (track, pause = false) => {
-  currentSong.src = "/assets/songs/" + track;
+  currentSong.src = "/songs/" + track;
   if (!pause) {
     currentSong.play();
     play.src = "assets/pause.svg";
